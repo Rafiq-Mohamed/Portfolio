@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mohamed Rafiq | Engineer</title>
+	<link rel="icon" type="image/png" href="images/logo.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2b055e4e23.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/skills.css">
+	<link rel="stylesheet" href="css/experience.css">
+	<link rel="stylesheet" href="css/education.css">
+	<link rel="stylesheet" href="css/footer.css">
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/homeabout.js"></script>
+</head>
+<body>
+
+    <!--Loader-->
+    <div class="loader">
+        <img src="images/loader.gif" alt="Loading..."/>
+    </div>
+
+	<!--Header-->
+    <header>
+        <a class="portfolio" href="">PORT<span>FOLIO</span></a>
+        <div class="hover" onclick="hoverMenu();"></div>
+        <ul class="headermenu">
+			<li><a href="#home" onclick="hoverMenu();">HOME</a></li>
+			<li><a href="#about" onclick="hoverMenu();">ABOUT ME </a></li>
+            <li><a href="#skills" onclick="hoverMenu();">SKILLS</a></li>
+            <li><a href="#experience" onclick="hoverMenu();">EXPERIENCE</a></li>  
+			<li><a href="#education" onclick="hoverMenu();">EDUCATION</a></li>
+        </ul>
+    </header>
+
+	<!--Homepage-->
+	<section class="homepage" id="home">
+		<div class="introduction">
+			<h2>Hello. Myself<br><span>Mohamed Rafiq.</span></h2>
+			<h3>I'm <span class="txt-rotate" data-period="2000" data-rotate='[ "an Engineer.","a PEGA Developer."]'></span></h3>
+		</div>
+	</section>
+    
+	<!--About Me-->
+	<section class="about" id="about">
+		<div class="heading">
+			<p>Get to know me</p>
+			<h2>About ME</h2>
+		</div>
+		<div class="aboutmecontent">
+			<div class="myphoto">
+				<img src="images/photo.jpg" alt="" class="picture">
+			</div>
+			<div class="aboutmedescription">
+				<h3>Who am I ?</h3>
+                <h2>Myself <span>Mohamed Rafiq, </span><span class="txt-rotate" data-period="2000" data-rotate='[ "an Engineer.","a PEGA Developer."]'></span></h2>
+                <p>I completed my graduation (B.E.) in Electronics and Communication Engineering at Rajalakshmi Engineering College, Thandalam. I'm a PEGA Certified Senior System Architect (version 8.6) and a PEGA Certified System Architect (version 8.4). A passionate learner, self-motivated, and a hard worker with time management and leadership qualities.</p>
+                <p><br>A good listener, a quick learner, and a person with an adaptive nature to the environment. A rational person who thinks in both positive and negative consequences of each action without involving emotions. My hobbies include playing Badminton and Chess.</p>
+                <div class="resume">
+                    <a href="Resume.pdf" target="_blank" class="viewcv">View Resume <i class="fas fa-file"></i></a>
+                </div>
+			</div>
+		</div>
+	</section>
+    
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>Knowledge plus ten thousand times is SKILL</p>
+        </div>
+        <div class="skillcontainer">
+            <div class="progressbar">
+                <div class="skillname">
+                    <span>Oracle DBMS</span>
+                </div>
+                <div class="progressvalue oracle">
+                    <span></span>
+                </div>
+            </div>
+            <div class="progressbar">
+                <div class="skillname">
+                    <span>PEGA PRPC</span>
+                </div>
+                <div class="progressvalue pega">
+                    <span></span>
+                </div>
+            </div>
+            <div class="progressbar">
+                <div class="skillname">
+                    <span>Python Programming</span>
+                </div>
+                <div class="progressvalue python">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!--Experience-->
+	<section class="experience" id="experience">
+		<div class="heading">
+			<h2>Experience</h2>
+			<p>Nothing which has entered into our experience is ever lost</p>
+		</div>
+		<div class="experiencetimeline">
+			<div class="experiencetimelinecontainer experiencetimelineleft">
+				<i class="experiencetimelineicon fa-solid fa-briefcase"></i>
+			  	<div class="experiencetimelinecontent">
+					<p class="timeperiod">January 2022 - March 2022</p>
+					<p class="companyname">Virtusa Consulting Services Private Limited</p>
+					<p class="position">Intern</p>
+			  	</div>
+			</div>
+			<div class="experiencetimelinecontainer experiencetimelineright">
+				<i class="experiencetimelineicon fa-solid fa-briefcase"></i>
+			  	<div class="experiencetimelinecontent">
+					<p class="timeperiod">April 2022 - July 2022</p>
+					<p class="companyname">Societe Generale Global Solution Centre</p>
+					<p class="position">Intern</p>
+			  	</div>
+			</div>
+            <div class="experiencetimelinecontainer experiencetimelineleft">
+				<i class="experiencetimelineicon fa-solid fa-briefcase"></i>
+			  	<div class="experiencetimelinecontent">
+					<p class="timeperiod">July 2022 - October 2024</p>
+					<p class="companyname">Societe Generale Global Solution Centre</p>
+					<p class="position">Software Engineer</p>
+			  	</div>
+			</div>
+            <div class="experiencetimelinecontainer experiencetimelineright">
+				<i class="experiencetimelineicon fa-solid fa-briefcase"></i>
+			  	<div class="experiencetimelinecontent">
+					<p class="timeperiod">October 2024 - Present</p>
+					<p class="companyname">NatWest Group</p>
+					<p class="position">Software Engineer</p>
+			  	</div>
+			</div>
+		</div>
+	</section>
+
+    <!--Education-->
+	<section class="education" id="education">
+		<div class="heading">
+			<h2>Education</h2>
+			<p>Passport to the FUTURE</p>
+		</div>
+		<div class="educationtimeline">
+			<div class="educationtimelinecontainer educationtimelineleft">
+				<i class="educationtimelineicon fa-solid fa-graduation-cap"></i>
+			  	<div class="educationtimelinecontent">
+                    <p>May 2016</p>
+					<p>Secondary School Leaving Certificate (SSLC)</p>
+                    <p>93.80%</p>
+					<p>Zion Matriculation Higher Secondary School</p>
+			  	</div>
+			</div>
+			<div class="educationtimelinecontainer educationtimelineright">
+				<i class="educationtimelineicon fa-solid fa-graduation-cap"></i>
+			  	<div class="educationtimelinecontent">
+                    <p>May 2018</p>
+					<p>Higher Secondary Certificate (HSC)</p>
+                    <p>90.41%</p>
+					<p>Valluvar Gurukulam Higher Secondary School</p>
+			  	</div>
+			</div>
+			<div class="educationtimelinecontainer educationtimelineleft">
+				<i class="educationtimelineicon fa-solid fa-graduation-cap"></i>
+			  	<div class="educationtimelinecontent">
+                    <p>August 2018 - May 2022</p>
+					<p>Bachelors in Engineering (B.E.)</p>
+                    <p>8.83 CGPA</p>
+					<p>Rajalakshmi Engineering College</p>
+			  	</div>
+			</div>
+		  </div>
+	</section>
+
+	<!--Footer-->
+	<footer class="copyright">
+		<p>Copyright <i class="fa-regular fa-copyright"></i> 2023 | All Rights Reserved<br><span>Created by Mohamed Rafiq</span></p>
+	</footer>
+
+</body>
+</html>

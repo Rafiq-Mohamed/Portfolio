@@ -1,0 +1,135 @@
+.skills{
+    background: whitesmoke;
+    min-height: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.skillcontainer .progressbar{
+    margin: 20px 0;
+}
+.skillcontainer .progressbar:first-child{
+    margin-top: 0px;
+}
+.skillcontainer .progressbar .skillname{
+    margin-bottom: 5px;
+}
+.skillcontainer .progressbar .skillname span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skillcontainer .progressbar .progressvalue{
+    height: 10px;
+    width: 100%;
+    background: white;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progressbar .progressvalue span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #009e66;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progressbar .progressvalue.oracle span{
+    width: 65%;
+}
+.progressbar .progressvalue.pega span{
+    width: 85%;
+}
+.progressbar .progressvalue.python span{
+    width: 75%;
+}
+.progressvalue span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #009e66;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+    -webkit-animation: showText2 0.5s 1.5s linear forwards;
+}
+.progressvalue span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #009e66;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+    -webkit-animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progressvalue.oracle span::after{
+    content: "65%";
+}
+.progressvalue.pega span::after{
+    content: "85%";
+}
+.progressvalue.python span::after{
+    content: "75%";
+}
+
+/*Responsive for 1025px*/
+@media(max-width:1025px){
+    .skills{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+/*Responsive for 769px*/
+@media(max-width:769px){
+    .skills{
+        padding-left: 50px;
+        padding-right: 50px;       
+    }
+}
+
+/*Responsive for 376px*/
+@media(max-width:376px){
+    .skills{
+        padding-left: 35px;
+        padding-right: 35px;       
+    }
+}
+
+/*Responsive for 321px*/
+@media(max-width:321px){
+    .skills{
+        padding-left: 50px;
+        padding-right: 50px;       
+    }
+}

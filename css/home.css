@@ -1,0 +1,99 @@
+.homepage{
+    min-height: 720px;
+    padding: 0px 120px;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.2;
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introduction h2{
+    font-weight: 200;
+    color: azure;
+    font-size: 35px;
+}
+.introduction h2 span{
+    font-weight: 700;
+    color: lemonchiffon;
+    font-size: 45px;
+}
+.introduction h3{
+    font-weight: 400;
+    color: #009e66;
+    font-size: 40px;
+}
+
+@media(max-width:1025px){
+    .homepage{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width:769px){
+    .homepage{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .introduction h2{
+        font-size: 30px;
+    }
+    .introduction h2 span{
+        font-size: 40px;
+    }
+    .introduction h3{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:426px){
+    .homepage{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .introduction h2{
+        font-size: 20px;
+    }
+    .introduction h2 span{
+        font-size: 30px;
+    }
+    .introduction h3{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:376px){
+    .homepage{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .introduction h2{
+        font-size: 20px;
+    }
+    .introduction h2 span{
+        font-size: 25px;
+    }
+    .introduction h3{
+        font-size: 22.5px;
+    }
+}
+
+@media(max-width:321px){
+    .homepage{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .introduction h2{
+        font-size: 15px;
+    }
+    .introduction h2 span{
+        font-size: 25px;
+    }
+    .introduction h3{
+        font-size: 18px;
+    }
+}

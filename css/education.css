@@ -1,0 +1,131 @@
+.education{
+	background: whitesmoke;
+    min-height: auto;
+}
+.educationtimeline{
+	position: relative;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+.educationtimeline::after{
+	content: '';
+	position: absolute;
+	width: 2px;
+	background: #009e66;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1px;
+}
+.educationtimelinecontainer{
+	padding: 15px 30px;
+	position: relative;
+	background: inherit;
+	width: 50%;
+}
+.educationtimelinecontainer.educationtimelineleft{
+	left: 0;
+}
+.educationtimelinecontainer.educationtimelineright{
+	left: 50%;
+}
+.educationtimelinecontainer::before{
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	top: calc(50% - 1px);
+	right: 8px;
+	background: #009e66;
+	z-index: 1;
+}
+.educationtimelinecontainer::after{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: calc(50% - 8px);
+	right: -8px;
+	background: white;
+	border: 2px solid #009e66;
+	border-radius: 16px;
+	z-index: 1;
+}
+.educationtimelinecontainer.educationtimelineright::before{
+	left: 8px;
+}
+.educationtimelinecontainer.educationtimelineright::after{
+	left: -8px;
+}
+.educationtimelinecontainer .educationtimelineicon{ 
+	position: absolute; display: 
+	inline-block; width: 40px; 
+	height: 40px; 
+	padding: 9px 0; 
+	top: calc(50% - 20px); 
+	background: white; 
+	border: 2px solid #009e66; 
+	border-radius: 40px; 
+	text-align: center; 
+	font-size: 18px; 
+	color: #009e66; 
+	z-index: 1;
+}
+.educationtimelinecontainer.educationtimelineleft .educationtimelineicon{
+	right: 56px;
+}
+.educationtimelinecontainer.educationtimelineright .educationtimelineicon{
+	left: 56px;
+}
+.educationtimelinecontainer .educationtimelinecontent{
+	padding: 30px 90px 30px 30px;
+	background: white;
+	position: relative;
+	border-radius: 0 500px 500px 0;
+}
+.educationtimelinecontainer.educationtimelineright .educationtimelinecontent{
+	padding: 30px 30px 30px 90px;
+	border-radius: 500px 0 0 500px;
+}
+.educationtimelinecontainer .educationtimelinecontent h2{
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	color: #333;
+}
+.educationtimelinecontainer .educationtimelinecontent p{
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333;
+}
+
+@media (max-width: 800px){
+	.educationtimeline::after{
+		left: 90px;
+	}
+	.educationtimelinecontainer{
+		width: 100%;
+		padding-left: 120px;
+		padding-right: 30px;
+	}
+	.educationtimelinecontainer.educationtimelineright{
+		left: 0%;
+	}
+	.educationtimelinecontainer.educationtimelineleft::before, .educationtimelinecontainer.educationtimelineright::before{
+		left: 100px;
+		border-color: transparent #009e66 transparent transparent;
+	}
+	.educationtimelinecontainer.educationtimelineleft::after, .educationtimelinecontainer.educationtimelineright::after{
+		left: 82px;
+	}
+	.educationtimelinecontainer.educationtimelineleft .educationtimelineicon, .educationtimelinecontainer.educationtimelineright .educationtimelineicon{
+		right: auto;
+		left: 146px;
+	}
+	.educationtimelinecontainer.educationtimelineleft .educationtimelinecontent, .educationtimelinecontainer.educationtimelineright .educationtimelinecontent{
+		padding: 30px 30px 30px 90px;
+		border-radius: 500px 0 0 500px;
+	}
+}

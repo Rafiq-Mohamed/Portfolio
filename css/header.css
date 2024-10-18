@@ -1,0 +1,121 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .portfolio{
+    color: whitesmoke;
+    padding: 30px 50px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header span{
+    color: #009e66;
+}
+header ul{
+    padding: 30px 25px;
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+}
+header ul li a:hover{
+    color: #009e66;
+}
+header.fix{
+    background: whitesmoke;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.fix .portfolio, .fix ul li a{
+    color: black;
+}
+
+@media(max-width:900px){
+    header, header.fix{
+        padding-right: 25px;
+    }
+    header .headermenu{
+        display: none;
+        position: fixed;
+        background: white;
+        display: block;
+        top: 96.8px;
+        left: -100%;
+        padding: 100px 35px;
+        width: 100%;
+        height: 750px;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    header .headermenu.active{
+        position: fixed;
+        background: white;
+        display: block;
+        top: 96.8px;
+        left: 0;
+        padding: 100px 35px;
+        width: 100%;
+        height: 750px;
+        text-align: center;
+    }
+    header ul li a{
+        font-size: 24px;
+        color: black;
+        font-weight: 400;
+        margin: 10px;
+    }
+    .hover{
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/menu.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .hover.active{
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/close.png');
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    header.fix .hover{
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+}
+
+@media(max-width:426px){
+    header .portfolio{
+        padding: 30px 30px;
+        font-size: 24px;
+        font-weight:700 ;
+        letter-spacing: 2px;
+    }
+}
+
+@media(max-width:376px){
+    header .logo{
+        padding: 30px 30px;
+        font-size: 24px;
+        font-weight:700 ;
+        letter-spacing: 2px;
+    }
+}
