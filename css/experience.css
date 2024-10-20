@@ -4,7 +4,7 @@
 .experiencetimeline{
 	position: relative;
 	width: 100%;
-	max-width: 1140px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 15px 0;
 }
@@ -33,7 +33,7 @@
 .experiencetimelinecontainer::before{
 	content: '';
 	position: absolute;
-	width: 50px;
+	width: 22px;
 	height: 2px;
 	top: calc(50% - 1px);
 	right: 8px;
@@ -83,6 +83,7 @@
 	background: whitesmoke;
 	position: relative;
 	border-radius: 0 500px 500px 0;
+	border: 2px solid #009e66;
 }
 .experiencetimelinecontainer.experiencetimelineright .experiencetimelinecontent{
 	padding: 30px 30px 30px 90px;

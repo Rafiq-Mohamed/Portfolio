@@ -52,7 +52,10 @@
 .progressbar .progressvalue.oracle span{
     width: 65%;
 }
-.progressbar .progressvalue.pega span{
+.progressbar .progressvalue.pega_decisioning span{
+    width: 60%;
+}
+.progressbar .progressvalue.pega_prpc span{
     width: 85%;
 }
 .progressbar .progressvalue.python span{
@@ -95,7 +98,10 @@
 .progressvalue.oracle span::after{
     content: "65%";
 }
-.progressvalue.pega span::after{
+.progressvalue.pega_decisioning span::after{
+    content: "60%";
+}
+.progressvalue.pega_prpc span::after{
     content: "85%";
 }
 .progressvalue.python span::after{
