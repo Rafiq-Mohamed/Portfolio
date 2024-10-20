@@ -1,10 +1,34 @@
 footer{
-    color: #333;
-    text-align: center;
     padding: 15px;
+    text-align: center;
+}
+.socialmediaicons{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    padding-bottom: 10px;
+}
+.icons{
+    display: inline-flex;
+}
+.icons a{
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding: 0 40px;
+    
+}
+.icons a i{
+    font-size: 25px;
+    line-height: 60px;
+    color: #009e66;
+}
+
+footer p{
+    color: #333;
     font-weight: bolder;
+    text-align: center;
 }
 footer span{
     color: #009e66;
-    font-size: 14px;
 }
