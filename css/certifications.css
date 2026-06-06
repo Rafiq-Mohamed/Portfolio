@@ -54,7 +54,7 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     .cert-grid {
         grid-template-columns: 1fr;
     }
