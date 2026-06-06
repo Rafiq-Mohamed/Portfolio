@@ -1,131 +1,156 @@
-.experience{
-    min-height: auto;
-}
-.experiencetimeline{
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 15px 0;
-}
-.experiencetimeline::after{
-	content: '';
-	position: absolute;
-	width: 2px;
-	background: #009e66;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -1px;
-}
-.experiencetimelinecontainer{
-	padding: 15px 30px;
-	position: relative;
-	background: inherit;
-	width: 50%;
-}
-.experiencetimelinecontainer.experiencetimelineleft{
-	left: 0;
-}
-.experiencetimelinecontainer.experiencetimelineright{
-	left: 50%;
-}
-.experiencetimelinecontainer::before{
-	content: '';
-	position: absolute;
-	width: 22px;
-	height: 2px;
-	top: calc(50% - 1px);
-	right: 8px;
-	background: #009e66;
-	z-index: 1;
-}
-.experiencetimelinecontainer::after{
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	top: calc(50% - 8px);
-	right: -8px;
-	background: whitesmoke;
-	border: 2px solid #009e66;
-	border-radius: 16px;
-	z-index: 1;
-}
-.experiencetimelinecontainer.experiencetimelineright::before{
-	left: 8px;
-}
-.experiencetimelinecontainer.experiencetimelineright::after{
-	left: -8px;
-}
-.experiencetimelinecontainer .experiencetimelineicon{ 
-	position: absolute; display: 
-	inline-block; width: 40px; 
-	height: 40px; 
-	padding: 9px 0; 
-	top: calc(50% - 20px); 
-	background: whitesmoke; 
-	border: 2px solid #009e66; 
-	border-radius: 40px; 
-	text-align: center; 
-	font-size: 18px; 
-	color: #009e66; 
-	z-index: 1;
-}
-.experiencetimelinecontainer.experiencetimelineleft .experiencetimelineicon{
-	right: 56px;
-}
-.experiencetimelinecontainer.experiencetimelineright .experiencetimelineicon{
-	left: 56px;
-}
-.experiencetimelinecontainer .experiencetimelinecontent{
-	padding: 30px 90px 30px 30px;
-	background: whitesmoke;
-	position: relative;
-	border-radius: 0 500px 500px 0;
-	border: 2px solid #009e66;
-}
-.experiencetimelinecontainer.experiencetimelineright .experiencetimelinecontent{
-	padding: 30px 30px 30px 90px;
-	border-radius: 500px 0 0 500px;
-}
-.experiencetimelinecontainer .experiencetimelinecontent h2{
-	margin: 0 0 10px 0;
-	font-size: 18px;
-	color: #333;
-}
-.experiencetimelinecontainer .experiencetimelinecontent p{
-	margin: 0;
-	font-size: 16px;
-	line-height: 22px;
-	color: #333;
+.experience {
+    min-height: calc(100vh - 80px);
+    padding-bottom: 40px;
 }
 
-@media (max-width: 800px){
-	.experiencetimeline::after{
-		left: 90px;
-	}
-	.experiencetimelinecontainer{
-		width: 100%;
-		padding-left: 120px;
-		padding-right: 30px;
-	}
-	.experiencetimelinecontainer.experiencetimelineright{
-		left: 0%;
-	}
-	.experiencetimelinecontainer.experiencetimelineleft::before, .experiencetimelinecontainer.experiencetimelineright::before{
-		left: 100px;
-		border-color: transparent #009e66 transparent transparent;
-	}
-	.experiencetimelinecontainer.experiencetimelineleft::after, .experiencetimelinecontainer.experiencetimelineright::after{
-		left: 82px;
-	}
-	.experiencetimelinecontainer.experiencetimelineleft .experiencetimelineicon, .experiencetimelinecontainer.experiencetimelineright .experiencetimelineicon{
-		right: auto;
-		left: 146px;
-	}
-	.experiencetimelinecontainer.experiencetimelineleft .experiencetimelinecontent, .experiencetimelinecontainer.experiencetimelineright .experiencetimelinecontent{
-		padding: 30px 30px 30px 90px;
-		border-radius: 500px 0 0 500px;
-	}
+.exp-grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.exp-card {
+    position: relative;
+    width: calc(50% - 30px);
+    padding: 25px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+}
+
+.exp-card:hover {
+    transform: translateY(-4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+}
+
+.exp-card.exp-card-left {
+    align-self: flex-start;
+}
+
+.exp-card.exp-card-right {
+    align-self: flex-end;
+}
+
+.exp-card::before {
+    content:"\f0b1";
+    font-family:"Font Awesome 6 Free";
+    font-weight:600;
+    position: absolute;
+    top: 40%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #3b82f6;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.exp-card.exp-card-left::before {
+    right: -45px;
+}
+
+.exp-card.exp-card-right::before {
+    left: -45px;
+}
+
+.company-name {
+    font-size: 18px;
+    color: #e2e8f0;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.role-card {
+    position: relative;
+    padding-left: 28px;
+    padding-bottom: 12px;
+}
+
+.role-card::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 25px;
+    width: 2px;
+    height: 80%;
+    background: rgba(255,255,255,0.2);
+}
+
+.role-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3b82f6;
+}
+
+.role-card:last-child::before {
+    height: 0;
+}
+
+.role-card:last-child {
+    padding-bottom: 0;
+}
+
+.position {
+    color: #94a3b8;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.duration {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+@media(max-width: 768px) {
+
+    .exp-grid::before {
+        left: 18px;
+        transform: none;
+    }
+
+    .exp-card,
+    .exp-card.exp-card-left,
+    .exp-card.exp-card-right {
+        width: calc(100% - 45px);
+        align-self: flex-end;
+    }
+
+    .exp-card::before,
+    .exp-card.exp-card-left::before,
+    .exp-card.exp-card-right::before {
+        left: -40px;
+        right: auto;
+    }
 }

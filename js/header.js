@@ -1,10 +1,17 @@
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("fix",window.scrollY > 0);
+const toggle = document.getElementById("menu-toggle");
+const nav = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav-list a");
+
+toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    nav.classList.toggle("active");
 });
-function hoverMenu(){
-    var menuToggle = document.querySelector(".hover");
-    var menu = document.querySelector(".headermenu");
-    menuToggle.classList.toggle("active");
-    menu.classList.toggle("active");
-}
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+        nav.classList.remove("active");
+        toggle.classList.remove("active");
+    });
+});

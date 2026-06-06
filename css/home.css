@@ -1,99 +1,67 @@
-.homepage{
-    min-height: 720px;
-    padding: 0px 120px;
-    position: relative;
+.home {
+    min-height: calc(110vh - 80px);
     display: flex;
-    justify-items: center;
-    align-items: center;
-    line-height: 1.2;
-    background: url('../images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
 }
-.introduction h2{
-    font-weight: 200;
-    color: azure;
-    font-size: 35px;
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
-.introduction h2 span{
+
+.home-welcome {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.home-name {
+    font-size: 48px;
     font-weight: 700;
-    color: lemonchiffon;
-    font-size: 45px;
-}
-.introduction h3{
-    font-weight: 400;
-    color: #009e66;
-    font-size: 40px;
+    color: #e2e8f0;
+    margin-bottom: 10px;
 }
 
-@media(max-width:1025px){
-    .homepage{
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+.home-role {
+    font-size: 24px;
+    font-weight: 500;
+    color: #e2e8f0;
 }
 
-@media(max-width:769px){
-    .homepage{
-        padding-left: 90px;
-        padding-right: 90px;
+#typing-text {
+    color: #3b82f6;
+    border-right: 2px solid #3b82f6;
+    padding-right: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        border-color: #3b82f6;
     }
-    .introduction h2{
-        font-size: 30px;
-    }
-    .introduction h2 span{
-        font-size: 40px;
-    }
-    .introduction h3{
-        font-size: 35px;
+    
+    25%, 75% {
+        border-color: transparent;
     }
 }
 
-@media(max-width:426px){
-    .homepage{
-        padding-left: 50px;
-        padding-right: 50px;
+@media (max-width: 768px) {
+    .home {
+        min-height: calc(120vh - 80px);
     }
-    .introduction h2{
-        font-size: 20px;
-    }
-    .introduction h2 span{
-        font-size: 30px;
-    }
-    .introduction h3{
-        font-size: 25px;
-    }
-}
 
-@media(max-width:376px){
-    .homepage{
-        padding-left: 30px;
-        padding-right: 30px;
+    .home-name {
+        font-size: 32px;
     }
-    .introduction h2{
-        font-size: 20px;
-    }
-    .introduction h2 span{
-        font-size: 25px;
-    }
-    .introduction h3{
-        font-size: 22.5px;
-    }
-}
 
-@media(max-width:321px){
-    .homepage{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .introduction h2{
-        font-size: 15px;
-    }
-    .introduction h2 span{
-        font-size: 25px;
-    }
-    .introduction h3{
+    .home-role {
         font-size: 18px;
+    }
+
+    .home-welcome {
+        font-size: 14px;
     }
 }

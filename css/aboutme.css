@@ -1,180 +1,115 @@
-.about{
-    min-height: auto;
-    padding-right: 120px;
-    padding-left: 120px;
+.about {
+    min-height: calc(100vh - 80px);
+    padding-bottom: 40px; 
 }
-.aboutmecontent{
+
+.about-card {
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(14px);
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    padding: 25px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
 }
-.myphoto{
-    min-width: 25%;
+
+.about-card:hover {
+    transform: translateY(-4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
 }
-img{
-    max-width: 100%;
-}
-.picture{
+
+.about-image {
     display: flex;
-    width: 350px;
-    height: 375px;
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-}
-.aboutmedescription{
-    padding-left: 50px;
-    text-align: justify;
-    color: #333;
-}
-.aboutmedescription h2{
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.aboutmedescription h2 span{
-    color: #009e66;
-}
-.aboutmedescription p{
-    font-size: 18px;
-}
-.resume{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
-.viewcv{
-    background: #009e66;
-    border: solid 1px #009e66;
-    color: whitesmoke;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-weight: 500;
-    padding: 15px 30px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-.viewcv:hover{
-    color: #009e66;
-    background: whitesmoke;
+
+.about-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
-@media(max-width:1025px){
-    .about{
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-    .aboutmecontent{
-        flex-direction: column;
-    }
-    .aboutmecontent .myphoto img{
-        display: block;
-        margin: 0 auto 30px auto;
-    }
-    .picture{
-        width: 280px;
-        height: 320px;
-    }
+.about-content {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media(max-width:769px){
-    .about{
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    .aboutmecontent{
-        flex-direction: column;
-    }
-    .aboutmecontent .myphoto img{
-        display: block;
-        margin: 0 auto 30px auto;
-    }
-    .picture{
-        width: 260px;
-        height: 300px;
-    }
-    .aboutmedescription{
-        padding-left: 0px;
-    }
-    .aboutmedescription h2{
-        font-weight: 400;
-    }
+.about-content p {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-@media(max-width:426px){
-    .about{
-        padding-left: 40px;
-        padding-right: 40px;
+.resume-btn {
+    display: inline-block; 
+    align-self: flex-start; 
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .about {
+        min-height: calc(160vh - 80px);
     }
-    .aboutmecontent{
+   
+    .about-card {
         flex-direction: column;
+        text-align: center;
     }
-    .aboutmecontent .myphoto img{
-        display: block;
-        margin: 0 auto 30px auto;
+
+    .about-image {
+        margin-bottom: 20px;
     }
-    .picture{
-        width: 220px;
-        height: 260px;
+
+    .about-content p {
+        text-align: justify;
     }
-    .aboutmedescription{
-        padding-left: 0px;
-        font-size: 16px;
-    }
-    .aboutmedescription h2{
-        font-weight: 300;
-        font-size: 18px;
+
+    .resume-btn {
+        align-self: center;
     }
 }
 
-@media(max-width:376px){
-    .about{
-        padding-left: 30px;
-        padding-right: 35px;
+@media (max-width: 425px) {
+    .about-heading {
+        font-size: 24px;
     }
-    .aboutmecontent{
-        flex-direction: column;
-    }
-    .aboutmecontent .myphoto img{
-        display: block;
-        margin: 0 auto 30px auto;
-    }
-    .picture{
-        width: 200px;
-        height: 240px;
-    }
-    .aboutmedescription{
-        padding-left: 0px;
-        font-size: 14px;
-    }
-    .aboutmedescription h2{
-        font-weight: 300;
-        font-size: 16px;
+
+    .about-content p {
+        font-size: 13px;
     }
 }
 
-@media(max-width:321px){
-    .about{
-        padding-left: 40px;
-        padding-right: 40px;
+@media (max-width: 375px) {
+    .about-content p {
+        font-size: 12.5px;
     }
-    .aboutmecontent{
-        flex-direction: column;
-    }
-    .aboutmecontent .myphoto img{
-        display: block;
-        margin: 0 auto 30px auto;
-    }
-    .picture{
-        width: 220px;
-        height: 260px;
-    }
-    .aboutmedescription{
-        padding-left: 0px;
-        font-size: 16px;
-    }
-    .aboutmedescription h2{
-        font-weight: 300;
-        font-size: 18px;
+}
+
+@media (max-width: 320px) {
+    .about-content p {
+        font-size: 12px;
     }
 }
