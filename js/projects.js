@@ -48,7 +48,9 @@ const projects = {
         summary: [
             "Enabled Single Sign-On (SSO) authentication for multiple environments to streamline secure user access.",
             "Customized 1:1 operational journeys to enhance user experience and personalize workflows.",
+            "Developed a workflow to automate the creation of new actions using Pega Generative AI and DX APIs.",
             "Developed and configured key pega components including data flows, strategies, datasets, service-SOAPs, service-RESTs, connect-RESTs, validations, data types, data jobs, activities, data transforms, decision data, access groups, queue processors, job schedulers, report definitions, authentication services, and key stores.",
+            "Developed and configured key pega Generative AI components including genAI connects, agents, and tools.",
             "Implemented unit test cases to validate functionality and ensure adherence to quality standards.",
             "Worked with PDC to monitor and eliminate system alerts for improved application performance.",
             "Worked with Pega Deployment Manager to deploy artifacts across multiple environments"
