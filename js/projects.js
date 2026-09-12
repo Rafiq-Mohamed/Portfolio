@@ -41,15 +41,17 @@ const projects = {
     project5: {
         title: "Customer Decisioning Application",
         summary: [
+            "Analyzed business requirements, proposed effective solutions, and implemented functional requirements by developing and configuring Pega application components aligned with business needs.",
             "Led the implementation of Single Sign-On (SSO) authentication across multiple environments by configuring authentication services and keystores, streamlining secure user access.",
             "Led the customization of operations manager application to enhance user experience and deliver personalized workflows based on business requirements.",
             "Led the design and implementation of Kafka-based integrations in Pega for event-driven communication, leveraging JSON and Avro message formats.",
             "Developed a new Pega constellation application leveraging Pega Generative AI capabilities, including GenAI connects, agents, and tools, and DX APIs to automate the creation and configuration of new actions.",
-            "Developed and configured key Pega components, including data flows, strategies, datasets, service SOAP, connect REST, validations, data jobs, activities, data transforms, decision data, access groups, access roles, access roles to object, access control policies, queue processors, job schedulers, and file listeners.",
             "Supported Pega application upgrades, analyzing compatibility considerations, resolving upgrade-related issues, and validating application functionality to ensure a smooth transition to the target Pega version.",
+            "Developed and configured key Pega components, including data flows, strategies, datasets, service SOAP, connect REST, validations, data jobs, activities, data transforms, decision data, access groups, access roles, access roles to object, access control policies, queue processors, job schedulers, and file listeners.",
             "Collaborated with cross-functional teams and stakeholders to understand requirements, coordinate integration activities, resolve technical challenges, and ensure successful end-to-end delivery.",
             "Mentored junior developers and supported team members by providing technical guidance and resolving code-related queries to improve team productivity and code quality.",
-            "Built and configured deployment pipelines using Pega Deployment Manager to automate and streamline the deployment of application artifacts across multiple environments."
+            "Designed and implemented Pega Deployment Manager pipelines and custom actions to automate application artifact deployments across multiple environments and streamline repetitive business processes, improving deployment efficiency and reducing manual effort.",
+            "Designed unit test cases for rules to validate rule functionality, business logic, and expected application behavior."
         ]
     }
 };
